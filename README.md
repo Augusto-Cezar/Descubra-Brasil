@@ -2,6 +2,8 @@
   # Descubra+Brasil
   Codigo criado para telas de aplicativo no projeto `Descubra +Brasil`
 
+  Utilizando o Figma Make para auxilio das telas
+
   ## Running the code
 
   Run `npm i` to install the dependencies.
