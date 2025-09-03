@@ -22,7 +22,7 @@ export default function Logo({ size = 'medium', showText = true, className = '' 
     <div className={`flex items-center space-x-2 ${className}`}>
       <div className={`${sizeClasses[size]} rounded-lg overflow-hidden from-[#00A859] to-[#FFD500] flex items-center justify-center`}>
         <img
-          src="src\images\Logo.png"
+          src="./images/Logo.png"
           alt="Descubra +Brasil Logo"
           className="w-full h-full object-cover"
         />
