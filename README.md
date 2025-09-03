@@ -16,16 +16,24 @@ Organizar itinerários com transporte.
 Participar de um sistema de gamificação com pontos e conquistas.
 
 🎯 Escopo do Produto
-Funcionalidade	Status
-Autenticação e perfil	✅ Concluído
-Listagem, busca e filtragem de eventos	✅ Concluído
-Detalhes de eventos	✅ Concluído
-Lista de favoritos	✅ Concluído
-Itinerário avançado (transporte)	🚧 Em andamento
-Sistema de gamificação	🚧 Em andamento
-Check-in em eventos	🚧 Em andamento
+
+✅ Autenticação e gerenciamento de perfil de usuário
+
+✅ Listagem, busca e filtragem de eventos
+
+✅ Visualização de detalhes de eventos
+
+✅ Criação de lista de favoritos
+
+🚧 Itinerário avançado com integração a transporte
+
+🚧 Sistema de gamificação (pontos, níveis, conquistas)
+
+🚧 Check-in em eventos
+
 ⚙️ Requisitos Funcionais (RF)
 <details> <summary><b>RF01 - Autenticação de Usuário</b></summary> Permitir login com E-mail e Senha, com recuperação e cadastro. </details> <details> <summary><b>RF02 - Onboarding</b></summary> Telas introdutórias após o primeiro login. </details> <details> <summary><b>RF03 - Listagem de Eventos</b></summary> Lista de eventos em destaque (imagem, nome, datas, localização). </details> <details> <summary><b>RF04 - Busca de Eventos</b></summary> Campo de busca textual com filtro dinâmico. </details> <details> <summary><b>RF05 - Filtragem de Eventos</b></summary> Filtros avançados por Categorias, Regiões e Período (Mês). </details> <details> <summary><b>RF06 - Detalhes do Evento</b></summary> Exibir descrição, categoria e informações adicionais. </details> <details> <summary><b>RF07 - Favoritos</b></summary> Marcar/desmarcar eventos como favoritos. </details> <details> <summary><b>RF08 - Itinerário Avançado (🚧)</b></summary> - Integração com apps de transporte (Uber, 99). - Informações de transporte público. - Salvar transporte preferido. </details> <details> <summary><b>RF09 - Perfil</b></summary> Tela com dados, estatísticas e configurações. </details> <details> <summary><b>RF10 - Logout</b></summary> Sair da conta de forma segura. </details> <details> <summary><b>RF11 - Gamificação (🚧)</b></summary> - Pontos de Cultura (PC) - Medalhas e conquistas - Check-in via geolocalização </details>
+
 ✨ Requisitos Não Funcionais (RNF)
 
 Usabilidade: interface limpa, intuitiva e responsiva.
