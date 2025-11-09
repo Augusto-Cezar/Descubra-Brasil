@@ -4,6 +4,7 @@ import { Card } from './ui/card';
 import BottomNavigation from './BottomNavigation';
 import { Screen } from '../App';
 import Logo from './Logo';
+import LogoutConfirmDialog from "./LogoutConfirmDialog";
 
 interface ProfileScreenProps {
   user: { name: string; email: string } | null;
@@ -158,23 +159,35 @@ export default function ProfileScreen({
 
         {/* Menu Items */}
         <Card className="bg-white rounded-xl shadow-sm overflow-hidden">
-          {menuItems.map((item, index) => (
-            <button
-              key={index}
-              onClick={item.action}
-              className={`w-full p-4 flex items-center space-x-3 text-left hover:bg-gray-50 transition-colors ${
-                index !== menuItems.length - 1 ? 'border-b border-gray-100' : ''
-              }`}
-            >
-              <item.icon 
-                size={20} 
-                color={item.danger ? '#d4183d' : '#666'} 
-              />
-              <span className={item.danger ? 'text-red-600' : 'text-gray-700'}>
-                {item.label}
-              </span>
-            </button>
-          ))}
+          {menuItems.map((item, index) => {
+            if (item.label === "Sair") {
+              return (
+                <LogoutConfirmDialog
+                  key={index}
+                  onConfirm={() => navigateToScreen("login")}
+                />
+              );
+            }
+            return (
+              <button
+                key={index}
+                onClick={item.action}
+                className={`w-full p-4 flex items-center space-x-3 text-left hover:bg-gray-50 transition-colors ${
+                  index !== menuItems.length - 1 ? "border-b border-gray-100" : ""
+                }`}
+              >
+                <item.icon
+                  size={20}
+                  color={item.danger ? "#d4183d" : "#666"}
+                />
+                <span
+                  className={item.danger ? "text-red-600" : "text-gray-700"}
+                >
+                  {item.label}
+                </span>
+              </button>
+            );
+          })}
         </Card>
       </div>
 
