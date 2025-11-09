@@ -43,7 +43,7 @@ export default function ProfileScreen({
     {
       label: 'Configurações',
       icon: Settings,
-      action: () => {}
+       action: () => navigateToScreen('settings')
     },
     {
       label: 'Notificações',

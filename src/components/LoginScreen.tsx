@@ -22,6 +22,10 @@ export default function LoginScreen({ onLogin, navigateToScreen }: LoginScreenPr
       const userEmail = email || 'usuario@exemplo.com';
       const userPassword = password || '123456';
       onLogin(userEmail, userPassword);
+
+      // 🟢 NOVA LINHA: Ir para a tela de autenticação após login
+      navigateToScreen("auth-code");
+
       setIsLoading(false);
     }, 1000);
   };

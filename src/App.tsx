@@ -9,6 +9,8 @@ import EventDetailsScreen from "./components/EventDetailsScreen";
 import ItineraryScreen from "./components/ItineraryScreen";
 import ProfileScreen from "./components/ProfileScreen";
 import FilterScreen from "./components/FilterScreen";
+import AuthCodeScreen from "./components/AuthCodeScreen";
+import SettingsScreen from "./components/SettingsScreen";
 
 export type Screen =
   | "splash"
@@ -19,7 +21,9 @@ export type Screen =
   | "event-details"
   | "itinerary"
   | "profile"
-  | "filter";
+  | "filter"
+  | "auth-code"
+  | "settings";
 
 export interface Event {
   id: string;
@@ -145,6 +149,16 @@ export default function App() {
     filter: (
       <FilterScreen navigateToScreen={navigateToScreen} />
     ),
+    "auth-code": (
+  <AuthCodeScreen navigateToScreen={navigateToScreen} />
+),
+    settings: (
+      <SettingsScreen
+        user={user}
+        navigateToScreen={navigateToScreen}
+      />
+    ),
+
   };
 
   return (
